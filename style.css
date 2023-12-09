@@ -1,0 +1,90 @@
+/* delau norm polojenye backgrounda */
+
+div.background {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+
+/* delau mashinku */
+.car {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(0, 0, 255);
+    position: relative;
+    animation: moveCar 5s;
+    margin-top: 600px;
+    margin-left: -210px;
+    border-radius: 20px;
+}
+
+.wheel {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.left {
+    top: 25px;
+    left: 25px;
+}
+
+.right {
+    top: 25px;
+    right: 25px;
+}
+
+.tablo {
+    width: 50px;
+    height: 25px;
+    background-color: rgba(0, 225, 255, 0.623);
+    margin-top: 25px;
+    margin-left: 130px;
+    color: orange;
+    text-align: center;
+}
+
+.door1 {
+    width: 25px;
+    height: 50px;
+    background-color: rgb(9, 16, 17);
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.door2 {
+    width: 25px;
+    height: 50px;
+    background-color: rgb(9, 16, 17);
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+
+.prikol {
+    color: aqua;
+}
+
+/* animatia mashinki */
+
+@keyframes moveCar {
+    from {left: -1000px;}
+    to {left: calc(100% - 250px);}
+}
